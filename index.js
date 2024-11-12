@@ -3,10 +3,9 @@ const { Client, middleware } = require('@line/bot-sdk');
 
 // ³]©w Line bot °t¸m
 const config = {
-  channelAccessToken: 'buH9bAFQTIazgCKVvaVD/mZB6cDs18oya4snMtGbESBTcVooTwgRv1o8DgALjFmGCUkXPyJ6jMcTVMEenysQNo+dF1IqQK7SSfMs6O1Y7Rb1BXtFiCvYXWtLv6ntflf5K7BOQk3F5Omq/130Yyky2wdB04t89/1O/w1cDnyilFU=',
-  channelSecret: '82e14fdf9c538db469810c6915c6cd51'
+  channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN,
+  channelSecret: process.env.CHANNEL_SECRET
 };
-
 const app = express();
 const client = new Client(config);
 
